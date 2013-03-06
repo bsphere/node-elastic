@@ -1,0 +1,25 @@
+{
+	"name": "node-elastic",
+	"version": "0.0.2",
+	"description": "thin Node.js ElasticSearch client",
+	"main": "es.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/bsphere/node-elastic.git"
+	},
+	"keywords": [
+		"ElasticSearch",
+		"thin",
+		"api",
+		"client",
+		"wrapper"
+	],
+	"author": {
+		"name": "Gal Ben-Haim"
+	},
+	"license": "MIT",
+	"readmeFilename": "README.md",
+	"dependencies": {
+		"request": "2.14"
+	}
+}
