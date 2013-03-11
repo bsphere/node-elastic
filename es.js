@@ -10,3 +10,17 @@ ES.prototype.search = function(index, type, obj, callback) {
 		callback(null, body);
 	});
 };
+
+ES.prototype.index = function(index, type, id, doc, callback) {
+	request({method: 'PUT', url: this.url + '/' + index + '/' + type + '/' + id, body: JSON.stringify(doc)}, function(err, res, body) {
+		if (err) { return callback(err); }
+		callback();
+	});
+};
+
+ES.prototype.mapping = function(index, type, settings, callback) {
+	request({method: 'PUT', url: this.url + '/' + index + '/' + type + '/_mapping', body: JSON.stringify(settings)}, function(err, res, body) {
+		if (err) { return callback(err); }
+		callback();
+	});
+};
