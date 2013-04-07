@@ -24,3 +24,10 @@ ES.prototype.mapping = function(index, type, settings, callback) {
 		callback();
 	});
 };
+
+ES.prototype.delete = function(index, type, id, callback) {
+	request({method: 'DELETE', url: this.url + '/' + index + '/' + type + '/' + id}, function(err, headers, body) {
+		if (err) { return callback(err); }
+		callback(null, body);
+	});
+};

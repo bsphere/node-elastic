@@ -1,6 +1,6 @@
 {
 	"name": "node-elastic",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "thin Node.js ElasticSearch client",
 	"main": "es.js",
 	"repository": {
