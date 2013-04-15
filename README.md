@@ -17,3 +17,6 @@ Supported Methods
 Currently the supported methods are:
 
 	search(index, type, searchObj, callback);
+	index(index, type, id, doc, callback);
+	mapping(index, type, settings, callback);
+	delete(index, type, id, callback);
